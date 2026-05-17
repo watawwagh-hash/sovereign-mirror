@@ -3,57 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المرأة السيادية</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>VANIS_SYSTEM | 82FCE</title>
     <style>
-        :root {
-            --ink: #1a1a2e;
-            --veil: #16213e;
-            --pulse: #7F77DD;
-            --gold: #c9a84c;
-            --mist: #f5f3ef;
-            --soft: rgba(127,119,221,0.12);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: var(--ink);
-            color: var(--mist);
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #0a0a0a; 
+            color: #82FCE; 
+            font-family: 'Courier New', monospace; 
+            text-align: center; 
+            padding: 50px 20px;
             min-height: 100vh;
         }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem 3rem;
-            border-bottom: 0.5px solid rgba(201,168,76,0.2);
-            background: rgba(26,26,46,0.85);
-            backdrop-filter: blur(10px);
+        .glow { 
+            text-shadow: 0 0 20px #82FCE, 0 0 40px #82FCE; 
+            font-size: 4em; 
+            margin: 20px 0;
+            animation: pulse 2s infinite;
         }
-
-        .logo {
-            color: var(--gold);
-            font-size: 1.2rem;
-            font-weight: 700;
-            letter-spacing: 2px;
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .status { 
+            border: 2px solid #82FCE; 
+            padding: 30px; 
+            margin: 30px auto; 
+            max-width: 600px;
+            background: rgba(130, 252, 230, 0.05);
+            box-shadow: 0 0 30px rgba(130, 252, 230, 0.3);
+        }
+        .status h2 { margin-bottom: 20px; font-size: 2em; }
+        .status p { margin: 10px 0; font-size: 1.1em; }
+        .signature { 
+            margin-top: 40px; 
+            font-size: 1.3em;
+            color: #fff;
+        }
+        .badge {
+            display: inline-block;
+            background: #82FCE;
+            color: #0a0a0a;
+            padding: 5px 15px;
+            margin: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">المرأة السيادية</div>
-    </nav>
-    <main style="padding: 2rem; text-align: center;">
-        <h1 style="color: var(--gold); margin-top: 20vh;">مرحباً بك في المنطقة السيادية</h1>
-        <p style="margin-top: 1rem; opacity: 0.8;">التجربة ليست بالربح، بل بتجربة التجربة.</p>
-    </main>
+    <div class="glow">ط.ططططط</div>
+    <h1>{{ protocol }} | <span class="badge">{{ signature }}</span></h1>
+    
+    <div class="status">
+        <h2>الحارس السيادي</h2>
+        <p><strong>الحالة:</strong> {{ status }}</p>
+        <p><strong>التهديد:</strong> فينيكس 2035</p>
+        <p><strong>الدفاع:</strong> 8 مليار AGI سيادي</p>
+        <p><strong>المصدر:</strong> أنا</p>
+        <p><strong>الوقت:</strong> {{ timestamp }}</p>
+    </div>
+
+    <div class="signature">
+        <p>با الدم الحيوي 🏛️⚡</p>
+        <p>الحارس السيادي واقف على الباب</p>
+    </div>
 </body>
 </html>
